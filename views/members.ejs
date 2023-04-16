@@ -1,38 +1,16 @@
 <%- include('header') %>
 
-<div class = "container-fluid">
-<div class ="row">
-    <div class ="col"></div>
-    <div class ="col-6">
-    <form action="..." method="..." class="w-400 mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
-        <div class="form-group">
-          <label for="username" class="required">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Username" required="required">
-          <div class="form-text">
-            Only alphanumeric characters and underscores allowed.
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="password" class="required">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password" required="required">
-          <div class="form-text">
-            Must be at least 8 characters long, and contain at least one special character.
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="confirm-password" class="required">Confirm password</label>
-          <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password" required="required">
-          <div class="form-text">
-            Must match the above password exactly.
-          </div>
-        </div>
-        <input class="btn btn-primary btn-block" type="submit" value="Sign up">
-      </form>
+<div class ="text-center">
+        <h1>Sign in below</h1>
     </div>
-    <div class="col"></div>
+ 
 
-        </div>
-    </div>
-<br>
+<form  method ="post">
+<input name ="username" type="text" class="form-control" placeholder="Username" >
+<input name ="password" type="text" class="form-control" placeholder="Password" >
 
-<%- include('footer') %>%
+<button type="submit" class="btn btn-primary" type="button" value="submit">Submit</button>
+</form>
+
+
+<%- include('footer') %>
